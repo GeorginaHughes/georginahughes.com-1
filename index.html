@@ -1,0 +1,36 @@
+<html ng-app="ghApp" ng-controller="GhHome">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{Page.getTitle()}}</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset-min.css"/>
+    <link rel="stylesheet" href="styles/dist/gh.min.css"/>
+</head>
+<body data-pinterest-extension-installed="cr1.39.0">
+    <nav class="main menu">
+        <a class="toggle" ng-click="toggleMenu()">
+            <div class="vertical-align-parent">
+                <span class="icon" ng-show="!menuIsOpen">&#9776;</span>
+                <span class="icon" ng-show="menuIsOpen">&#88;</span>
+            </div>
+            <div class="vertical-align-parent">
+                <span>{{Page.getMenuMessage()}}</span>
+            </div>
+        </a>
+        <ul ng-show="menuIsOpen">
+            <li class="vertical-align-parent"><a href="#/">Home</a></li>
+            <li class="vertical-align-parent"><a href="#/cv">CV</a></li>
+            <li class="vertical-align-parent"><a href="http://angularjshowtos.blogspot.co.uk" target="_blank">Angular Blog</a></li>
+            <!--<li class="vertical-align-parent"><a href="#/links">Links</a></li>-->
+            <li class="vertical-align-parent"><a href="#">View Site Source</a></li>
+        </ul>
+    </nav>
+
+    <main ng-view class="{{Page.getMainClass()}}">
+    </main>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="scripts/dist/gh.min.js"></script>
+
+</body>
+</html>

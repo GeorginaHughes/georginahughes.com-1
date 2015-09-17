@@ -1,0 +1,100 @@
+$brown: #584731;
+$cream: #FAFFDF;
+$black: #010101;
+$blue: #CADDFD;
+$red: #A96B53;
+
+*{
+  background: $black;
+  color: $blue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0 2rem 2rem;
+}
+
+h1{
+  font-size: 9rem;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  color: $cream;
+}
+
+h2{
+  text-align: center;
+  font-size: 4rem;
+  color: $red;
+  margin: 0 0 2rem 0;
+}
+
+h3{
+  color: $blue;
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+p{
+  color: $cream;
+  margin: 0 0 0.8rem 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main.menu{
+  text-align: center;
+
+  .toggle{
+    height: 170px;
+  }
+
+  .icon{
+    font-size: 5rem;
+    height: 110px;
+  }
+
+  li{
+    height: 6rem;
+  }
+
+  a{
+    font-size: 3rem;
+  }
+}
+
+.vertical-align-parent{
+  display: table;
+  width: 100%;
+
+  & > *{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.home{
+
+}
+
+.cv{
+  nav{
+    li{
+      height: 4rem;
+    }
+  }
+
+  .date{
+    font-size: 1.2rem;
+  }
+
+  .technologies li{
+    color: $cream;
+  }
+}
+
+.links{
+
+}
