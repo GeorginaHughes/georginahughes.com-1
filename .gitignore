@@ -1,4 +1,5 @@
 node_modules/
+.idea/
 .grunt/
 .sass-cache/
 scripts/buffer/
