@@ -4,7 +4,8 @@
 function Page() {
     var title = 'Georgina Hughes',
         menuMessage = 'Menu',
-        mainClass = 'home';
+        mainClass = 'home',
+        menuIsOpen = false;
 
     return {
         getTitle: getTitle,
@@ -12,7 +13,11 @@ function Page() {
         getMenuMessage: getMenuMessage,
         setMenuMessage: setMenuMessage,
         getMainClass: getMainClass,
-        setMainClass: setMainClass
+        setMainClass: setMainClass,
+        getMenuIsOpen: getMenuIsOpen,
+        setMenuIsOpen: setMenuIsOpen,
+        toggleMenu: toggleMenu,
+        load: load
     };
 
     function getTitle() {
@@ -37,5 +42,28 @@ function Page() {
 
     function setMainClass(newClass){
         mainClass = newClass;
+    }
+
+    function getMenuIsOpen(){
+        return menuIsOpen;
+    }
+
+    function setMenuIsOpen(isOpen){
+        menuIsOpen = isOpen;
+    }
+
+    function toggleMenu(){
+        if(menuIsOpen){
+            setMenuMessage('Menu');
+        } else {
+            setMenuMessage('Close');
+        }
+
+        menuIsOpen = !menuIsOpen;
+    }
+
+    function load(){
+        setMenuMessage('Menu');
+        setMenuIsOpen(false);
     }
 }

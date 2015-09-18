@@ -6,3 +6,4 @@ scripts/buffer/
 scripts/dist/
 styles/build/
 styles/dist/
+npm-debug.log

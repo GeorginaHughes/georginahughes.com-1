@@ -7,21 +7,22 @@
 </head>
 <body data-pinterest-extension-installed="cr1.39.0">
     <nav class="main menu">
-        <a class="toggle" ng-click="toggleMenu()">
+        <a class="toggle" ng-click="Page.toggleMenu()">
             <div class="vertical-align-parent">
-                <span class="icon" ng-show="!menuIsOpen">&#9776;</span>
-                <span class="icon" ng-show="menuIsOpen">&#88;</span>
+                <span class="icon" ng-show="!Page.getMenuIsOpen()">&#9776;</span>
+                <span class="icon" ng-show="Page.getMenuIsOpen()">&#88;</span>
             </div>
             <div class="vertical-align-parent">
                 <span>{{Page.getMenuMessage()}}</span>
             </div>
         </a>
-        <ul ng-show="menuIsOpen">
+        <ul ng-show="Page.getMenuIsOpen()">
             <li class="vertical-align-parent"><a href="#/">Home</a></li>
             <li class="vertical-align-parent"><a href="#/cv">CV</a></li>
             <li class="vertical-align-parent"><a href="http://angularjshowtos.blogspot.co.uk" target="_blank">Angular Blog</a></li>
             <!--<li class="vertical-align-parent"><a href="#/links">Links</a></li>-->
             <li class="vertical-align-parent"><a href="https://github.com/liberalGeorge/georginahughes.com" target="_blank">View Site Source</a></li>
+            <!--<li class="vertical-align-parent"><a href="#/contact">Contact</a></li>-->
         </ul>
     </nav>
 
