@@ -4,8 +4,11 @@ $black: #010101;
 $blue: #CADDFD;
 $red: #A96B53;
 
-*{
+html{
   background: $black;
+}
+
+*{
   color: $blue;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -97,4 +100,40 @@ a{
 
 .links{
 
+}
+
+@media screen and (min-width: 700px){
+  h1{
+    font-size: 7rem;
+  }
+
+  .main.menu{
+    .icon{
+      font-size: 4rem;
+      height: 85px;
+    }
+
+    a{
+      font-size: 2rem;
+    }
+
+    li{
+      height: 4rem;
+    }
+  }
+
+  .cv{
+    nav{
+      li{
+        height: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  body{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
