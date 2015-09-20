@@ -113,36 +113,7 @@ a{
 
 }
 
-@media (min-device-width: 800px){
-  h1{
-    font-size: 7rem;
-  }
-
-  .main.menu{
-    .icon{
-      font-size: 4rem;
-      height: 85px;
-    }
-
-    a{
-      font-size: 2rem;
-    }
-
-    li{
-      height: 4rem;
-    }
-  }
-
-  .cv{
-    nav{
-      li{
-        height: 3rem;
-      }
-    }
-  }
-}
-
-@media (min-width: 1000px){
+@media (min-device-width: 768px){
   body{
     max-width: 1000px;
     margin: 0 auto;
@@ -182,7 +153,7 @@ a{
   }
 
   .cv{
-    margin: 0 100px;
+    margin: 0 10%;
 
     .menu{
       li{
