@@ -7,3 +7,4 @@ scripts/dist/
 styles/build/
 styles/dist/
 npm-debug.log
+*.DS_STORE
