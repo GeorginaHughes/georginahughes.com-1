@@ -59,7 +59,7 @@ module.exports = function (grunt) {
                 banner: '/*Version: <%= version %>, Date: <%= grunt.template.today("yyyy-mm-dd h:MM:ss") %>*/'
             },
             gh: {
-                src: ['scripts/src/Apps/app.js', 'scripts/src/cv/*.js', 'scripts/src/home/*.js', 'scripts/src/links/*.js', 'scripts/src/page/*.js', 'scripts/src/Apps/ghConfiguration.js', '!scripts/modules/**/*.spec.js'],
+                src: ['scripts/src/Apps/app.js', 'scripts/src/cv/*.js', 'scripts/src/home/*.js', 'scripts/src/links/*.js', 'scripts/src/contact/*.js', 'scripts/src/page/*.js', 'scripts/src/Apps/ghConfiguration.js', '!scripts/modules/**/*.spec.js'],
                 dest: 'scripts/buffer/gh.concat.js'
             }
         },
@@ -296,5 +296,5 @@ module.exports = function (grunt) {
     grunt.registerTask('watchJs', ['watch:scripts']);
     grunt.registerTask('watchCss', ['watch:styles']);
     grunt.registerTask('development', ['clean:previousBuild', 'jshint', 'concat', 'ngAnnotate', 'uglify:dev', 'sass', 'clean:jsBuffer']);
-    grunt.registerTask('production', ['clean:previousBuild', 'jshint', 'jasmine', 'concat', 'ngAnnotate', 'uglify:build', 'sass', 'autoprefixer', 'clean:cssUnprefixed', 'clean:jsBuffer']);
+    grunt.registerTask('production', ['clean:previousBuild', 'jshint', 'concat', 'ngAnnotate', 'uglify:build', 'clean:jsBuffer']);
 };
