@@ -15,6 +15,10 @@ function ghRouteConfiguration($routeProvider) {
             templateUrl: 'partials/links.html',
             controller: 'GhLinks'
         })
+        .when('/contact', {
+            templateUrl: 'partials/contact.html',
+            controller: 'GhContact'
+        })
         .otherwise({
             redirectTo: '/home',
             templateUrl: 'partials/home.html',
