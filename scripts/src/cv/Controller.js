@@ -15,7 +15,7 @@ function GhCv($scope, $routeParams, Page) {
         $scope.profile = true;
         $scope.employment = true;
         $scope.education = true;
-        $scope.technologies = true;
+        $scope.software = true;
         $scope.voluntary = true;
 
         Page.setTitle('Georgina Hughes');
@@ -36,9 +36,9 @@ function GhCv($scope, $routeParams, Page) {
                     Page.setTitle('What has Georgina Hughes learned?');
                     $scope.education = true;
                     break;
-                case 'technologies':
-                    Page.setTitle('Does Georgina Hughes know the latest technologies?');
-                    $scope.technologies = true;
+                case 'software':
+                    Page.setTitle('Does Georgina Hughes know the latest software?');
+                    $scope.software = true;
                     break;
                 case 'voluntary':
                     Page.setTitle('How does Georgina Hughes have time to volunteer?');
